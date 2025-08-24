@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Publicar seu Site - BellaVita</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f6f2;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #d4af37, #8a6d3b);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 40px 0;
+        }
+        
+        .step-card {
+            flex-basis: 30%;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .step-number {
+            background-color: #d4af37;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .providers {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .provider-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .price {
+            color: #d4af37;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #8a6d3b;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #d4af37;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            background: #333;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .step-card {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Como Publicar seu Site de Salão de Beleza</h1>
+            <p>Guia completo para colocar seu site no ar e conectá-lo a um domínio personalizado</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h2>Passos para Publicar seu Site</h2>
+        <div class="steps">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Escolha e Registre um Domínio</h3>
+                <p>Selecione um nome único para seu salão e registre em sites como Registro.br ou GoDaddy.</p>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Contrate um Serviço de Hospedagem</h3>
+                <p>Escolha entre opções gratuitas ou pagas dependendo das necessidades do seu negócio.</p>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Faça Upload dos Arquivos do Site</h3>
+                <p>Use FTP ou o painel de controle para enviar todos os arquivos do seu site.</p>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-number">4</div>
+                <h3>Conecte o Domínio à Hospedagem</h3>
+                <p>Configure as DNS para apontar seu domínio para o servidor de hospedagem.</p>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-number">5</div>
+                <h3>Teste seu Site</h3>
+                <p>Verifique se tudo está funcionando corretamente em diferentes dispositivos.</p>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-number">6</div>
+                <h3>Promova seu Site</h3>
+                <p>Compartilhe nas redes sociais, Google Meu Negócio e outros canais.</p>
+            </div>
+        </div>
+        
+        <h2>Onde Hospedar seu Site</h2>
+        <div class="providers">
+            <div class="provider-card">
+                <h3>Hostinger</h3>
+                <p>Ótimo custo-benefício para pequenos negócios</p>
+                <div class="price">A partir de R$ 9,99/mês</div>
+                <a href="https://www.hostinger.com.br" class="btn" target="_blank">Conhecer</a>
+            </div>
+            
+            <div class="provider-card">
+                <h3>KingHost</h3>
+                <p>Hospedagem brasileira com suporte em português</p>
+                <div class="price">A partir de R$ 14,90/mês</div>
+                <a href="https://king.host" class="btn" target="_blank">Conhecer</a>
+            </div>
+            
+            <div class="provider-card">
+                <h3>GitHub Pages</h3>
+                <p>Opção gratuita para sites estáticos</p>
+                <div class="price">Gratuito</div>
+                <a href="https://pages.github.com" class="btn" target="_blank">Conhecer</a>
+            </div>
+            
+            <div class="provider-card">
+                <h3>Netlify</h3>
+                <p>Fácil deploy com arrastar e soltar</p>
+                <div class="price">Plano gratuito disponível</div>
+                <a href="https://www.netlify.com" class="btn" target="_blank">Conhecer</a>
+            </div>
+        </div>
+        
+        <h2>Próximos Passos para seu Salão</h2>
+        <p>Após publicar seu site, considere:</p>
+        <ul style="margin: 20px 0 20px 30px;">
+            <li>Integrar um sistema de agendamento online</li>
+            <li>Cadastrar seu negócio no Google Meu Negócio</li>
+            <li>Criar páginas nas redes sociais (Instagram, Facebook)</li>
+            <li>Otimizar seu site para mecanismos de busca (SEO)</li>
+        </ul>
+        
+        <p style="text-align: center; margin-top: 30px;">
+            <a href="#" class="btn">Voltar ao Topo</a>
+        </p>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 BellaVita Salão de Beleza - Todos os direitos reservados</p>
+            <p>Este é um exemplo educativo para demonstrar como publicar um site</p>
+        </div>
+    </footer>
+</body>
+</html>
